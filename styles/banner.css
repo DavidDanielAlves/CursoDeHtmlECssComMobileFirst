@@ -25,12 +25,12 @@
 }
 
 .banner__pesquisa::placeholder {
-    font-family: var(--font-principal);
+    font-family: var(--fonte-principal);
     font-size: 14px;
     font-weight: 400;
     text-align: center;
     color: var(--branco);
-    background: url(../imgs/Pesquisa.svg) no-repeat;
+    background: url("../img/Lupa.svg") no-repeat;
     background-position: 1em;
 }
 
@@ -49,16 +49,15 @@
 }
 
 @media screen and (min-width: 1728px) {
-    
-    .banner {
-        padding: 6em 0;
-    }
-
     .banner__pesquisa {
         width: 35%;
     }
 
     .banner__pesquisa::placeholder {
         background-position: 12em;
+    }
+
+    .banner {
+        padding: 6em 0;
     }
 }

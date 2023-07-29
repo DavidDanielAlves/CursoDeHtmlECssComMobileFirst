@@ -1,21 +1,21 @@
-.cabecalho__menu-hamburguer {
+.cabeçalho__menu-hamburguer {
     width: 24px;
     height: 24px;
-    background-image: url(../imgs/Menu.svg);
+    background-image: url("../img/Menu.svg");
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
 }
 
-.container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer {
-    background-image: url("../imgs/Menu\ Aberto.svg");
+.container__botao:checked~.container__rotulo>.cabeçalho__menu-hamburguer {
+    background-image: url("../img/Menu Aberto.svg");
 }
 
 .container__botao:checked~.container__rotulo {
     background: var(--azul-degrade);
 }
 
-.cabecalho {
+.cabeçalho {
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
@@ -36,14 +36,15 @@
     display: none;
     position: absolute;
     top: 100%;
-    width: 50vw;
+    width: 60vw;
 }
 
-.container__botao:checked ~ .lista-menu {
+.container__botao:checked~.lista-menu {
     display: block;
 }
 
-.lista-menu__titulo, .lista-menu__item {
+.lista-menu__titulo,
+.lista-menu__item {
     padding: 1em;
     background-color: var(--branco);
 }
@@ -69,13 +70,19 @@
     display: none;
 }
 
-.opcoes{
+.opções {
+    display: none;
+}
+
+.container__texto {
     display: none;
 }
 
 @media screen and (min-width: 1024px) {
-    .container__titulo, .container__titulo--negrito{
-        font-family: var(--font-secundario);
+
+    .container__titulo,
+    .container__titulo--negrito {
+        font-family: var(--fonte-secundario);
         font-size: 30px;
     }
 
@@ -88,16 +95,16 @@
         font-weight: 700;
     }
 
-    .opcoes {
+    .opções {
         display: flex;
     }
 
-    .opcoes__item {
+    .opções__item {
         padding: 0 1em;
         text-transform: uppercase;
     }
 
-    .opcoes__link {
+    .opções__link {
         text-decoration: none;
         color: var(--preto);
     }
@@ -106,26 +113,26 @@
         display: none;
     }
 
-    .cabecalho__menu-hamburguer {
+    .cabeçalho__menu-hamburguer {
         display: none;
     }
 
-    .opcoes__botao:checked ~ .lista-menu {
+    .opções__botão:checked~.lista-menu {
         display: block;
         width: auto;
     }
 
-    .opcoes__botao {
+    .opções__botão {
         display: none;
     }
 
-    .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item {
+    .opções__botão:checked~.opções__rotulo>.opções__item {
         background: var(--azul-degrade);
         color: var(--branco);
     }
 
-    .opcoes__item {
-        padding: 2em  1em;
+    .opções__item {
+        padding: 2em 1em;
     }
 
     .lista-menu__item:hover {
@@ -136,14 +143,10 @@
         -webkit-text-fill-color: var(--branco);
         text-decoration: none;
     }
-}
 
-.container__texto {
-    display: none;
 }
 
 @media screen and (min-width: 1728px) {
-
     .container__link {
         display: flex;
         align-items: center;
@@ -151,11 +154,11 @@
         color: var(--preto);
     }
 
-    .cabecalho {
+    .cabeçalho {
         padding: 0 2em;
     }
 
-    .opcoes {
+    .opções {
         margin-right: auto;
     }
 
